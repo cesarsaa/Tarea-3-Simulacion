@@ -59,3 +59,18 @@ hist(pob3,freq = F,xlab = "x",ylab = "Frecuencia",main="Logistic(10,1)")
 lines(lp3,dlogis(lp3,10,1))
 hist(pob4,freq = F,xlab = "x",ylab = "Frecuencia",main="Logistic(50,1)")
 lines(lp4,dlogis(lp4,50,1))
+
+
+
+#Ensayo Grafico de densidades para ver mejor el comportamiento de la logistic:
+x11()
+plot(density(pl1),xlim=c(-10,100))
+lines(density(pl2))
+lines(density(pl3))
+lines(density(pl4))
+
+x11()
+plot(density(pob1),xlim=c(-5,80))
+lines(density(pob2))
+lines(density(pob3))
+lines(density(pob4))

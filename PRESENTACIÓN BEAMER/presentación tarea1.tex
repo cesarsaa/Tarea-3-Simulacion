@@ -38,7 +38,7 @@
 \frametitle{Distribución Poisson}
 \begin{itemize}
 \item $\lambda$ es un parámetro positivo que representa el número de veces que se espera que ocurra el fenómeno durante un intervalo dado.
-\item $F(x)=\sum\limits_{i=1}^{x} \frac{\lambda_{i}\cdot e^{-\lambda}}{i!}$
+\item $F(x)=\sum\limits_{i=1}^{x} \frac{\lambda_{i}\cdot e^{-\lambda}}{i!}=\frac{\Gamma([k+1],\lambda)}{[k]!}$ para $k>0$ y $\Gamma(x,y)$ es la función gamma incompleta.
 \item $f.g.m=m_{x}(t)=E[e^{tx}]=\sum\limits_{x} e^{tx}p(x)= e^{[\lambda(e^t-1)]}$
 \item $Media=E[x]=\lambda$
 \item $Varianza=\lambda$
@@ -102,7 +102,7 @@ $$F(x;a,b)=\frac{1}{1+e^{-(x-a)/b}}=\frac{1}{2}+\frac{1}{2}tanh\left(\frac{x-a}{
 \begin{figure}[!h]
     \begin{center}
         \includegraphics[width=11cm]{imagenes/poisson1.pdf}
-        \caption{Comportamiento de la distribución Poisson variando $\alpha$}
+        \caption{Comportamiento de la distribución Poisson variando $\lambda$}
         \label{fig:Densidad}
     \end{center}
 \end{figure}
