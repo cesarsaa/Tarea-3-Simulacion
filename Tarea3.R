@@ -96,9 +96,9 @@ for (i in 1:N) {
 }
 
 x11()
-plot(u)
+plot(u, main="Metodo de Cuadrados Medios", sub="Generacion de valores pseudoaleatorios", 
+     xlab="Cantidad de numeros aleatorios", ylab="valor")
 
-print(u)
 
 
 
