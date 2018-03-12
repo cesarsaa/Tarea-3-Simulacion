@@ -1,0 +1,12 @@
+\frametitle{Anexos}
+\framesubtitle{Método de Cuadrados Medios, Generación de valores pseudoaleatorios}
+\begin{verbatim}
+  num<-(as.numeric(numeroscentrales))/10^cifrasinicial
+  u[i]<-c(num)
+  x<-as.numeric(numeroscentrales)
+  }
+
+x11()
+plot(u)
+\end{verbatim}
+

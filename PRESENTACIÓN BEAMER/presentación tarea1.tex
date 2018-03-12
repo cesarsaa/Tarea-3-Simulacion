@@ -7,7 +7,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{subfigure}
-
+\usepackage{verbatim}
 \author{Kevin Garcia - Cesar Saavedra}
 \title{Taller: Modelos de distribución}
 
@@ -19,13 +19,13 @@
 
 
 \begin{frame}
-\frametitle{Distribución Poisson}
-~\\  Esta distribución es una de las más importantes distribuciones de variable discreta. Sus principales aplicaciones hacen referencia a la modelización de situaciones en las que nos interesa determinar el número de hechos de cierto tipo que se pueden producir en un intervalo de tiempo o de espacio, bajo presupuestos de aleatoriedad.
-~\\ Su función de densidad esta dada por: 
+\frametitle{Distribuci\'{o}n Poisson}
+~\\  Esta distribuci\'{o}n es una de las más importantes distribuciones de variable discreta. Sus principales aplicaciones hacen referencia a la modelizaci\'{o}n de situaciones en las que nos interesa determinar el n\'{u}mero de hechos de cierto tipo que se pueden producir en un intervalo de tiempo o de espacio, bajo presupuestos de aleatoriedad.
+~\\ Su funci\'{o}n de densidad esta dada por: 
 ~\\$$f(x,\lambda)=\frac{e^{-\lambda}\cdot \lambda^x}{x!}  ; x \in \{0,1,2,3,...\}$$
 ~\\donde:
 \begin{itemize} 
-\item x es el número de ocurrencias del evento o fenómeno (la función nos da la probabilidad de que el evento suceda precisamente x veces).
+\item x es el número de ocurrencias del evento o fen\'{o}meno (la funci\'{o}n nos da la probabilidad de que el evento suceda precisamente x veces).
 \end{itemize}
 \end{frame}
 
@@ -46,14 +46,14 @@
 \frametitle{Aplicaciones de la distribución Poisson}
 ~\\La distribución de Poisson se emplea para describir procesos como los siguientes:  
 \begin{itemize}
-\item El número de autos que pasan a través de un cierto punto en una ruta (suficientemente
+\item El n\'{u}mero de autos que pasan a través de un cierto punto en una ruta (suficientemente
 distantes de los semáforos) durante un periodo definido de tiempo.  
-\item El número de errores de ortografía que uno comete al escribir una única página.  
-\item El número de llamadas telefónicas en una central telefónica por minuto.  
-\item El número de servidores web accedidos por minuto.  
-\item El número de defectos en una longitud específica de una cinta magnética.   
-\item El número de defectos por metro cuadrado de tela.
-\item El número de estrellas en un determinado volumen de espacio.
+\item El n\'{u}mero de errores de ortografía que uno comete al escribir una única página.  
+\item El n\'{u}mero de llamadas telefónicas en una central telefónica por minuto.  
+\item El n\'{u}mero de servidores web accedidos por minuto.  
+\item El n\'{u}mero de defectos en una longitud específica de una cinta magnética.   
+\item El n\'{u}mero de defectos por metro cuadrado de tela.
+\item El n\'{u}mero de estrellas en un determinado volumen de espacio.
 \end{itemize}
 \end{frame}
 \begin{frame}
@@ -87,7 +87,7 @@ $$F(x;a,b)=\frac{1}{1+e^{-(x-a)/b}}=\frac{1}{2}+\frac{1}{2}tanh\left(\frac{x-a}{
 \item Epidemiología: para describir la propagación de epidemias.
 \item Psicología: para describir el proceso de aprendizaje.
 \item Tecnología: para describir cómo las tecnologías se popularizan y compiten entre sí.
-\item Márketing: para estudiar la difusión de nuevos productos.
+\item Marketing: para estudiar la difusión de nuevos productos.
 \item Energía: para estudiar la difusión y sustitución de unas fuentes de energía primarias por otras.
 \end{itemize}
 \end{frame}
@@ -136,8 +136,39 @@ $$F(x;a,b)=\frac{1}{1+e^{-(x-a)/b}}=\frac{1}{2}+\frac{1}{2}tanh\left(\frac{x-a}{
 \end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[fragile]
 \frametitle{Anexos}
-\framesubtitle{M�todo de Cuadrados Medios, Generaci�n de valores pseudoaleatorios}
+\framesubtitle{Método de Cuadrados Medios, Generación de valores pseudoaleatorios}
+\begin{verbatim}
+x<-55895649 #Número al azar de minimo 4 cifras, con cifras pares (2n cifras)  
+cifrasinicial<-trunc(log10(x))+1    #Detectar cifras del número incial
+n<-cifrasinicial/2 #encontramos el n de la formula 2n
+N<-1000 #Cantidad de números aleatorios a generar
+u<-c()
+for (i in 1:N) {
+  x<-x^2
+  cif<-trunc(log10(x))+1
+  while((cif)!=4*n) {
+    x<-x*(10)
+    cif<-trunc(log10(x))+1
+    }
+  xnueva<-toString(x)
+  numeroscentrales<-substring(xnueva,n+1,(2*n+n))
+\end{verbatim}
+\end{frame}
 
+\begin{frame}[fragile]
+\frametitle{Anexos}
+\framesubtitle{Método de Cuadrados Medios, Generación de valores pseudoaleatorios}
+\begin{verbatim}
+  num<-(as.numeric(numeroscentrales))/10^cifrasinicial
+  u[i]<-c(num)
+  x<-as.numeric(numeroscentrales)
+  }
+
+x11()
+plot(u)
+\end{verbatim}
+
+\end{frame}
 \end{document}
