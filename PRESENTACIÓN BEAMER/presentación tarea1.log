@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  11 MAR 2018 21:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  12 MAR 2018 13:45
 entering extended mode
 **"./presentación tarea1.tex"
 ("presentación tarea1.tex"
@@ -1373,7 +1373,7 @@ thkerncmss.
 File: imagenes/poisson1.pdf Graphic file (type pdf)
 
 <use imagenes/poisson1.pdf>
-Package pdftex.def Info: imagenes/poisson1.pdf used on input line 104.
+Package pdftex.def Info: imagenes/poisson1.pdf used on input line 106.
 (pdftex.def)             Requested size: 312.9803pt x 165.96553pt.
  [8
 
@@ -1382,13 +1382,13 @@ Package pdftex.def Info: imagenes/poisson1.pdf used on input line 104.
 File: imagenes/logistic0.pdf Graphic file (type pdf)
 
 <use imagenes/logistic0.pdf>
-Package pdftex.def Info: imagenes/logistic0.pdf used on input line 115.
+Package pdftex.def Info: imagenes/logistic0.pdf used on input line 117.
 (pdftex.def)             Requested size: 312.9803pt x 165.96553pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:Densidad}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.115 \end{frame}
+l.117 \end{frame}
                   [9
 
  <./imagenes/logistic0.pdf>]
@@ -1396,23 +1396,23 @@ l.115 \end{frame}
 File: imagenes/logistic1.pdf Graphic file (type pdf)
 
 <use imagenes/logistic1.pdf>
-Package pdftex.def Info: imagenes/logistic1.pdf used on input line 126.
+Package pdftex.def Info: imagenes/logistic1.pdf used on input line 128.
 (pdftex.def)             Requested size: 312.9803pt x 165.96553pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:Densidad}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.126 \end{frame}
+l.128 \end{frame}
                   [10
 
  <./imagenes/logistic1.pdf>]
-Overfull \hbox (113.04283pt too wide) in paragraph at lines 137--137
+Overfull \hbox (113.04283pt too wide) in paragraph at lines 139--139
 []\OT1/cmss/m/n/10.95 datahttps://www.sciencedirect.com.bd.univalle.edu.co/scie
 nce/article/pii/S1877705815026107  
  []
 
 
-Overfull \hbox (92.90695pt too wide) in paragraph at lines 137--137
+Overfull \hbox (92.90695pt too wide) in paragraph at lines 139--139
 []\OT1/cmss/m/n/10.95 https://www.sciencedirect.com.bd.univalle.edu.co/science/
 article/pii/S0019103516301774  
  []
@@ -1451,14 +1451,14 @@ numero incial[]
 \tf@snm=\write8
 \openout8 = `"presentación tarea1.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
  ("presentación tarea1.aux"
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
 Package rerunfilecheck Info: File `"presentación tarea1".out' has not changed.
 
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1470,13 +1470,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
  ) 
 Here is how much of TeX's memory you used:
- 18072 strings out of 493334
- 343647 string characters out of 3139234
+ 18074 strings out of 493334
+ 343663 string characters out of 3139234
  421744 words of memory out of 3000000
- 21131 multiletter control sequences out of 15000+200000
+ 21133 multiletter control sequences out of 15000+200000
  14358 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,17n,57p,427b,581s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1493,7 +1493,7 @@ cm/cmss9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi1
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "presentación tarea1.pdf" (13 pages, 999400 bytes).
+Output written on "presentación tarea1.pdf" (13 pages, 999721 bytes).
 PDF statistics:
  443 PDF objects out of 1000 (max. 8388607)
  28 named destinations out of 1000 (max. 500000)
